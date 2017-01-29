@@ -33,4 +33,4 @@ Add 1 billion BigDecimal using array  |  12.410227 sec
 	number so it will take longer time. BigDecimal is like a double primitive and Double object but BigDecimal have to
 	change double number to besome strange number with strange decimal such as if you create BigDecimal with param 1.2
 	and then you print you will get 1.1999999999999999555910790149937383830547332763671875 some kind like this it will
-	take more time and many data usage thismake BigDecimal slower than double and Double.
+	take more time and a lots of memory this make BigDecimal slower than double and Double.
