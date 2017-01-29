@@ -1,12 +1,28 @@
 package stopwatch;
 
+/**
+ * A task that add chars to a StringBuilder.
+ * 
+ * @author Archawin Tirugsapun
+ *
+ */
 public class TaskAppendToStringBuilder implements Runnable {
+	/** A number of chars that user want to add. */
 	int count;
 
+	/**
+	 * Constructor that set number of chars.
+	 * 
+	 * @param count
+	 *            maximum number of chars that user want to add.
+	 */
 	public TaskAppendToStringBuilder(int count) {
 		this.count = count;
 	}
 
+	/**
+	 * Add char 'a' to a StringBuilder by count from user input.
+	 */
 	public void run() {
 		final char CHAR = 'a';
 		StringBuilder builder = new StringBuilder();
@@ -19,6 +35,11 @@ public class TaskAppendToStringBuilder implements Runnable {
 		System.out.println("final string length = " + result.length());
 	}
 
+	/**
+	 * Return the string information from this task.
+	 * 
+	 * @return the string information from this task.
+	 */
 	public String toString() {
 		return String.format("Append %,d chars to StringBuilder\n", count);
 	}

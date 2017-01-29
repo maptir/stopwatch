@@ -1,13 +1,31 @@
 package stopwatch;
 
+/**
+ * A task that add double to an array of Double.
+ * 
+ * @author Archawin Tirugsapun
+ *
+ */
+
 public class TaskSumDouble implements Runnable {
+	/** Size of Double array. */
 	static final int ARRAY_SIZE = 500000;
+	/** A number of Double that user want to add. */
 	int counter;
 
+	/**
+	 * Constructor that set number of Double.
+	 * 
+	 * @param counter
+	 *            maximum number of Double that user want to add.
+	 */
 	public TaskSumDouble(int counter) {
 		this.counter = counter;
 	}
 
+	/**
+	 * Add a number 1 to ARRAY_SIZE and then find sum of all number.
+	 */
 	public void run() {
 		// create array of values to add, before we start the timer
 		Double[] values = new Double[ARRAY_SIZE];
@@ -24,6 +42,11 @@ public class TaskSumDouble implements Runnable {
 
 	}
 
+	/**
+	 * Return the string information from this task.
+	 * 
+	 * @return the string information from this task.
+	 */
 	public String toString() {
 		return String.format("Sum array of Double objects with count=%,d\n", counter);
 	}
