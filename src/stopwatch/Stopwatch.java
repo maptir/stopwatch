@@ -58,10 +58,7 @@ public class Stopwatch {
 	 * @return true if stopwatch is running, false if is not running.
 	 */
 	public boolean isRunning() {
-		if (running) {
-			return true;
-		}
-		return false;
+		return running;
 	}
 
 	public static void main(String[] args) {
