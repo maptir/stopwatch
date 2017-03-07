@@ -22,12 +22,10 @@ public class TaskTimer {
 	 * @param task
 	 *            is a task that run from another class.
 	 */
-	public void taskTimer(Runnable task) {
-		System.out.print(task);
+	public void measureAndPrint(Runnable task) {
+		System.out.println(task);
 		timer.start();
-
 		task.run();
-
 		timer.stop();
 		System.out.printf("Elapsed time %.6f sec\n\n", timer.getElapsed());
 	}

@@ -15,12 +15,12 @@ public class Main {
 		TaskSumDouble task5 = new TaskSumDouble(counter);
 		TaskSumBigDecimal task6 = new TaskSumBigDecimal(counter);
 
-		timer.taskTimer(task1);
-		timer.taskTimer(task2);
-		timer.taskTimer(task3);
-		timer.taskTimer(task4);
-		timer.taskTimer(task5);
-		timer.taskTimer(task6);
+		timer.measureAndPrint(task1);
+		timer.measureAndPrint(task2);
+		timer.measureAndPrint(task3);
+		timer.measureAndPrint(task4);
+		timer.measureAndPrint(task5);
+		timer.measureAndPrint(task6);
 
 	}
 }
